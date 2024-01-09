@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "商品详情页",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "shu-nav-bar": "../../../components/common/nav-bar/index",
+    "shu-login-privacy": "../../../components/common/login-privacy/index",
+    "shu-loading": "../../../components/common/loading/index",
+    "confirm": "../components/confirm/index"
+  }
+}

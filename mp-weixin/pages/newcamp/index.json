@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "新品共创营",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "shu-swiper": "../../components/common/swiper/index",
+    "shu-tab-bar": "../../components/common/tab-bar/index",
+    "shu-loading": "../../components/common/loading/index"
+  }
+}

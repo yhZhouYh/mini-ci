@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "我的",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "shu-tab-bar": "../../components/common/tab-bar/index",
+    "shu-loading": "../../components/common/loading/index",
+    "user-nav": "./components/user-nav/index",
+    "user-card": "./components/user-card/index",
+    "user-common": "./components/user-common/index"
+  }
+}

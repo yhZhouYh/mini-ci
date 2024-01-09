@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "shu-login-privacy": "../login-privacy/index"
+  }
+}

@@ -1,0 +1,1 @@
+<view wx:if="{{a}}" class="login-modal data-v-eb01da4c"><text class="login-text data-v-eb01da4c"> 加入会员 尊享权益 </text><view class="login-button data-v-eb01da4c" bindtap="{{b}}"> 注册/登录 </view></view><shu-login-privacy class="r data-v-eb01da4c" u-r="mask" u-i="eb01da4c-0" bind:__l="__l"/>

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "用户隐私条款",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "shu-nav-bar": "../../../components/common/nav-bar/index",
+    "shu-loading": "../../../components/common/loading/index"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "灵感厨房",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "shu-img-loading": "../../components/common/img-loading/index",
+    "shu-mall-card": "../../components/common/mall-card/index",
+    "shu-tab-bar": "../../components/common/tab-bar/index",
+    "shu-loading": "../../components/common/loading/index"
+  }
+}

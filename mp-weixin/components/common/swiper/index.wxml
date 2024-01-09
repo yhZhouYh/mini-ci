@@ -1,0 +1,1 @@
+<view class="margin-wrap data-v-daaae219"><swiper class="swiper data-v-daaae219" autoplay="{{b}}" interval="{{3000}}" indicator-dots="{{c}}" circular="true"><swiper-item wx:for="{{a}}" wx:for-item="item" wx:key="c" class="data-v-daaae219"><image src="{{item.a}}" class="img data-v-daaae219" mode="aspectFill" bindtap="{{item.b}}"/></swiper-item></swiper></view>

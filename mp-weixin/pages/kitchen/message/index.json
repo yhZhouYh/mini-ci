@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "发布灵感",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "shu-nav-bar": "../../../components/common/nav-bar/index",
+    "shu-uploader": "../../../components/common/uploader/index",
+    "u-form-item": "../../../node-modules/uview-plus/components/u-form-item/u-form-item",
+    "u-form": "../../../node-modules/uview-plus/components/u-form/u-form",
+    "u-textarea": "../../../node-modules/uview-plus/components/u-textarea/u-textarea",
+    "shu-login-privacy": "../../../components/common/login-privacy/index",
+    "shu-loading": "../../../components/common/loading/index"
+  }
+}

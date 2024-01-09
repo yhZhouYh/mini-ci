@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "我的发布",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "shu-nav-bar": "../../../components/common/nav-bar/index",
+    "shu-public-none": "../../../components/common/public-none/index",
+    "shu-mall-card": "../../../components/common/mall-card/index",
+    "shu-loading": "../../../components/common/loading/index"
+  }
+}

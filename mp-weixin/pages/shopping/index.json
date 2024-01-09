@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "我的积分",
+  "enablePullDownRefresh": true,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "shu-nav-bar": "../../components/common/nav-bar/index",
+    "shu-tab-bar": "../../components/common/tab-bar/index",
+    "shu-login-privacy": "../../components/common/login-privacy/index",
+    "shu-loading": "../../components/common/loading/index",
+    "rules": "./components/rules/index",
+    "card": "./components/card/index",
+    "box": "./components/box/index",
+    "confirm": "./components/confirm/index"
+  }
+}

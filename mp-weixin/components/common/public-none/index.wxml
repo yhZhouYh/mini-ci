@@ -1,0 +1,1 @@
+<view wx:if="{{a}}" class="none-style-add data-v-839de953" style="{{'margin-top:' + d}}"><image src="{{b}}" class="img data-v-839de953"/><view class="text3 data-v-839de953">{{ c }}</view></view>

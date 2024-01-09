@@ -1,0 +1,1 @@
+<view class="card-style data-v-6608e5ec"><text class="text1 data-v-6608e5ec" style="{{'color:' + a + ';' + ('font-weight:' + b)}}" bindtap="{{c}}"> 积分兑换 </text><text class="text2 data-v-6608e5ec" style="{{'color:' + d + ';' + ('font-weight:' + e)}}" bindtap="{{f}}"> 积分记录 </text><view class="underline data-v-6608e5ec" style="{{'left:' + g}}"/></view>

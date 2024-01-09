@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "个人资料",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "shu-nav-bar": "../../../components/common/nav-bar/index",
+    "u-icon": "../../../node-modules/uview-plus/components/u-icon/u-icon",
+    "shu-loading": "../../../components/common/loading/index",
+    "usersex": "../components/user-sex/index",
+    "qushe-picker": "../components/qushe-picker/qushe-picker"
+  }
+}

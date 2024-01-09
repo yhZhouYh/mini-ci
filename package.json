@@ -1,0 +1,87 @@
+{
+  "name": "@shu-fe/mini-ci",
+  "type": "module",
+  "version": "1.0.8",
+  "packageManager": "pnpm@8.6.12",
+  "description": "",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/antfu",
+  "homepage": "https://github.com/antfu/pkg-name#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antfu/pkg-name.git"
+  },
+  "bugs": "https://github.com/antfu/pkg-name/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "bin": {
+    "mini": "./dist/index.cjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "start": "esno src/index.ts 测试",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@inquirer/confirm": "^2.0.9",
+    "@inquirer/input": "^1.2.8",
+    "@inquirer/prompts": "^3.0.3",
+    "@inquirer/select": "^1.2.8",
+    "@types/fs-extra": "^11.0.1",
+    "core-js": "^3.32.1",
+    "fs-extra": "^11.1.1",
+    "miniprogram-ci": "^1.9.5",
+    "semver": "^7.5.4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.40.2",
+    "@antfu/ni": "^0.21.5",
+    "@antfu/utils": "^0.7.6",
+    "@types/node": "^20.5.2",
+    "@types/semver": "^7.5.0",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.47.0",
+    "esno": "^0.17.0",
+    "lint-staged": "^14.0.1",
+    "pnpm": "^8.6.12",
+    "rimraf": "^5.0.1",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.1.6",
+    "unbuild": "^1.2.1",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.2"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

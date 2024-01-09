@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "选择收货地址",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "shu-nav-bar": "../../../components/common/nav-bar/index",
+    "shu-loading": "../../../components/common/loading/index"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "u-modal": "../../../../node-modules/uview-plus/components/u-modal/u-modal",
+    "shu-login-privacy": "../../../../components/common/login-privacy/index"
+  }
+}

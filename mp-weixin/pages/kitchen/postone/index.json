@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "话题名称",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "shu-nav-bar": "../../../components/common/nav-bar/index",
+    "shu-loading": "../../../components/common/loading/index"
+  }
+}

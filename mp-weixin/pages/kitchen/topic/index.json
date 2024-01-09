@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "话题详情",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "shu-nav-bar": "../../../components/common/nav-bar/index",
+    "shu-img-loading": "../../../components/common/img-loading/index",
+    "shu-mall-card": "../../../components/common/mall-card/index",
+    "shu-tab-bar": "../../../components/common/tab-bar/index",
+    "shu-loading": "../../../components/common/loading/index"
+  }
+}

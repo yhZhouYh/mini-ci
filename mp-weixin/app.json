@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/kitchen/index",
+    "pages/newcamp/index",
+    "pages/shopping/index",
+    "pages/user/index",
+    "pages/kitchen/postone/index",
+    "pages/kitchen/posttwo/index",
+    "pages/kitchen/postthree/index",
+    "pages/kitchen/postfour/index",
+    "pages/kitchen/message/index",
+    "pages/kitchen/topic/index",
+    "pages/index/details/index",
+    "pages/shopping/location/index",
+    "pages/user/information/index",
+    "pages/user/release/index",
+    "pages/user/contactus/index",
+    "pages/user/about/index",
+    "pages/shopping/address/index",
+    "pages/user/application/index",
+    "pages/user/exchange/index",
+    "pages/shopping/details/index",
+    "pages/shopping/addAdress/index",
+    "pages/user/user-privacy/index",
+    "pages/user/clauses/index",
+    "pages/user/detail/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#2c2c2c",
+    "selectedColor": "#ff8936",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/kitchen/index",
+        "text": "灵感厨房"
+      },
+      {
+        "pagePath": "pages/newcamp/index",
+        "text": "新品共创营"
+      },
+      {
+        "pagePath": "pages/shopping/index",
+        "text": "积分商场"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,5 @@
+'use strict'; const e = require('../../common/vendor.js')
+
+const a = { name: '::cache::', makeKey: e => e + a.name, isCache: e => e && e.includes(a.name) }; const o = { setStorage: (o, r, t = !0) => (t && (o = a.makeKey(o)), new Promise(((a, t) => { e.index.setStorage({ key: o, data: r, success(e) { a(e.data) }, fail(e) { t(e) } }) }))), getStorage: (o, r = 'cache') => new Promise(((t, c) => { r === 'cache' ? e.index.getStorage({ key: a.makeKey(o), success(e) { t(e.data) }, fail(e) { c(e) } }) : r === 'normal' && e.index.getStorage({ key: o, success(e) { t(e.data) }, fail(e) { c(e) } }) })), removeStorage(o, r = 'cache') { r === 'cache' ? e.index.removeStorage({ key: a.makeKey(o) }) : r === 'normal' ? e.index.removeStorage({ key: o }) : r === 'all' && (e.index.removeStorage({ key: a.makeKey(o) }), e.index.removeStorage({ key: o })) }, clearStorage(r = !1) { r ? e.index.clearStorage() : e.index.getStorageInfo({ success(e) { const r = e.keys; for (let t = 0, c = r.length; t < c; t++) { const e = r[t]; a.isCache(e) && o.removeStorage(e, 'normal') } }, fail() {} }) } }
+
+e.wx$1.Storage = o, exports.Storage = o

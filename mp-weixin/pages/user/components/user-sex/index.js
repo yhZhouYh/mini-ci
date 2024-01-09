@@ -1,0 +1,3 @@
+'use strict'; const e = require('../../../../common/vendor.js')
+
+if (!Array) { e.resolveComponent('u-action-sheet')() }Math; const n = { __name: 'index', emits: ['change'], setup(n, { expose: o, emit: t }) { const a = e.reactive({ show: !1 }); function s() { a.show = !a.show } const i = e.ref([{ name: '选择性别', color: '#ffaa7f', fontSize: '17', disabled: !0 }, { name: '男', fontSize: '17' }, { name: '女', fontSize: '17' }, { name: '取消', fontSize: '17' }]); function r(e) { e.name == '女' && t('change', 2), e.name == '男' && t('change', 1), s() } return o({ open: s }), (n, o) => ({ a: e.o(r), b: e.p({ 'safe-area-inset-bottom': 'true', 'actions': e.unref(i), 'title': n.title, 'show': e.unref(a).show, 'round': '60rpx' }) }) } }; wx.createComponent(n)

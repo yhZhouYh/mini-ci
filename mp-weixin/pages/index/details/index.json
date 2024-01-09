@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "内容详情",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "shu-nav-bar": "../../../components/common/nav-bar/index",
+    "shu-img-loading": "../../../components/common/img-loading/index",
+    "shu-loading": "../../../components/common/loading/index"
+  }
+}

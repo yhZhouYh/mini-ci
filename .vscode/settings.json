@@ -1,0 +1,26 @@
+{
+  "prettier.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "scss"
+  ],
+  "editor.formatOnSave": false,
+  "i18n-ally.localesPaths": [
+    "src/pages/user/components/uni-datetime-picker/i18n"
+  ]
+}

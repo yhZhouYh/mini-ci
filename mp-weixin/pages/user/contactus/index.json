@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "联系我们",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "shu-nav-bar": "../../../components/common/nav-bar/index",
+    "shu-loading": "../../../components/common/loading/index"
+  }
+}

@@ -1,0 +1,1 @@
+<view wx:if="{{a}}" class="{{['data-v-2239de1c', f]}}" style="width:100%;height:100%"><image src="{{b}}" mode="{{c}}" style="{{d}}" lazy-load binderror="{{e}}" class="lazy-load data-v-2239de1c"/></view><view wx:else class="viewImg v-else data-v-2239de1c" style="{{i}}"><image mode="{{g}}" lazy-load src="{{h}}" class="lazy-load data-v-2239de1c"/></view>

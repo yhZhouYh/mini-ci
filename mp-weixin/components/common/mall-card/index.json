@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "shu-img-loading": "../img-loading/index"
+  }
+}

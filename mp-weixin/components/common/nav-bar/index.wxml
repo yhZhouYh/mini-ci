@@ -1,0 +1,1 @@
+<view><u-navbar wx:if="{{b}}" bindleftClick="{{a}}" u-i="b3a2fe08-0" bind:__l="__l" u-p="{{b}}"/></view>

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "shu-public-none": "../../../../components/common/public-none/index",
+    "exchange": "../exchange/index",
+    "creditslog": "../creditslog/index"
+  }
+}

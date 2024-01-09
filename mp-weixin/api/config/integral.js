@@ -1,0 +1,3 @@
+'use strict'; const t = require('../../utils/request/index.js')
+
+exports.buy = function (e, r) { return t.http.request({ method: 'POST', url: `/api/v2/points_rewards/buy/${e}`, data: r }) }, exports.getMemberLogList = function (e) { return t.http.request({ method: 'POST', url: '/api/v2/points_logs/member', data: e }) }, exports.getMembersCurrent = function () { return t.http.request({ method: 'GET', url: '/api/v2/members/current' }) }, exports.getdetails = function (e) { return t.http.request({ method: 'GET', url: `/api/v2/point_rewards/${e.id}` }) }, exports.getlist = function (e) { return t.http.request({ method: 'POST', url: '/api/v2/point_rewards', data: e }) }

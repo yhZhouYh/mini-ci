@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "u-checkbox": "../../../node-modules/uview-plus/components/u-checkbox/u-checkbox",
+    "u-checkbox-group": "../../../node-modules/uview-plus/components/u-checkbox-group/u-checkbox-group",
+    "u-button": "../../../node-modules/uview-plus/components/u-button/u-button"
+  }
+}

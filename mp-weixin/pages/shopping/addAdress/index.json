@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "添加地址",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "shu-nav-bar": "../../../components/common/nav-bar/index",
+    "shu-loading": "../../../components/common/loading/index",
+    "uni-data-picker": "../components/uni-data-picker/uni-data-picker"
+  }
+}

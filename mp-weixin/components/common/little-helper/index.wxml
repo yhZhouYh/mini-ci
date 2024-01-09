@@ -1,0 +1,110 @@
+<wxs module="test">
+
+var startX = 0
+var startY = 0
+var lastLeft = 0
+var lastTop = 0
+var left
+var top
+var isDragging = false // 用于标记是否正在拖动
+// 获取屏幕宽度
+var customValue
+// 获取偏移量
+var leftX 
+
+// 样式代码
+/**
+   * lastLeft：左偏移量
+   * top：上偏移量
+   * isTran：不是拖动状态
+   */
+function styleDarg(lastLeft, top, isTran = true) {
+  // 'translate3d(' + lastLeft + 'px, ' + top + 'px, 0)'
+  return isTran
+    ? {
+        'transform': 'translate3d(' + lastLeft + 'px, ' + top + 'px, 0)',
+        '-webkit-transform': 'translate3d(' + lastLeft + 'px, ' + top + 'px, 0)',
+        'transition': 'all .2s linear',
+        '-webkit-transition': 'all .2s linear',
+      }
+    : {
+        'transform': 'translate3d(' + lastLeft + 'px, ' + top + 'px, 0)',
+        '-webkit-transform': 'translate3d(' + lastLeft + 'px, ' + top + 'px, 0)',
+        'transition': 'none',
+        '-webkit-transition': 'none',
+      }
+}
+
+// 按下
+function touchstart(event, ins) {
+  // 获取当前偏移量
+  leftX = event.currentTarget.offsetLeft
+
+
+  // 获取了屏幕宽度
+  customValue = event.currentTarget.dataset.customValue
+  var touch = event.touches[0] || event.changedTouches[0]
+  startX = touch.pageX + 20
+  startY = touch.pageY + 20
+  isDragging = false // 初始化为未拖动状态
+}
+
+// 拖动
+function touchmove(event, ins) {
+    var touch = event.touches[0] || event.changedTouches[0]
+    var pageX = touch.pageX
+    var pageY = touch.pageY
+    left = pageX - startX + lastLeft
+    top = pageY - startY + lastTop
+    startX = pageX
+    startY = pageY
+    lastLeft = left
+    lastTop = top
+
+    // 获取类名.darg的元素并加入响应样式
+    ins.selectComponent('.darg').setStyle(styleDarg(left, top, false))
+    // 判断是否拖动
+    if (Math.abs(pageX - startX) > 5 || Math.abs(pageY - startY) > 5){
+      isDragging = true
+    }
+
+    return false
+}
+
+// 离开
+function touchend(event, ins) {
+  
+  if (!isDragging) {
+    dargElement = ins.selectComponent('.darg')
+    // 获取当前小助手盒子的宽度
+    var viewWidth = Math.ceil(132 / 750 * customValue + 1);
+    // 判断是靠右边还是左边
+    // left是左偏移量
+
+    // 小助手默认左边
+    if(lastLeft>=0){
+      if (lastLeft > (customValue / 2) - (viewWidth / 2))
+        lastLeft = customValue - viewWidth
+      else
+        lastLeft = 0
+    } else {
+      // 小助手默认右边
+      if ((lastLeft * -1) > (customValue / 2) - (viewWidth / 2))
+        lastLeft = -leftX
+      else
+        lastLeft = 0
+      }
+
+    dargElement.setStyle(styleDarg(lastLeft, top))
+  }
+  isDragging = false // 重置拖动状态
+}
+
+module.exports = {
+  touchstart:touchstart,
+  touchmove:touchmove,
+  touchend:touchend,
+}
+
+</wxs>
+<view class="data-v-11326573" catchtap="{{c}}"><view ref="viewDarg" class="darg data-v-11326573" data-custom-value="{{b}}" bindtouchstart="{{test.touchstart}}" bindtouchmove="{{test.touchmove}}" bindtouchend="{{test.touchend}}"><view class="data-v-11326573"><view class="darg_one data-v-11326573"><image class="img data-v-11326573" src="{{a}}" mode="aspectFit|aspectFill|widthFix"/></view><view class="darg_two data-v-11326573"> 添加 </view><view class="darg_two data-v-11326573"> 小助手 </view></view></view></view>

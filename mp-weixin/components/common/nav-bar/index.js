@@ -1,0 +1,4 @@
+'use strict'; const e = require('../../../common/vendor.js'); const t = require('../../../store/user/index.js'); const r = require('../../../router/index.js'); if (require('../../../store/loading/index.js'), require('../../../store/login/index.js'), !Array)
+  e.resolveComponent('u-navbar')()
+
+Math; const o = { __name: 'index', props: { title: { type: Number, default: '首页' }, leftIconSize: { type: Number, default: 40 }, url: { type: String, default: '' }, autoBack: { type: Boolean, default: !0 } }, setup(o) { const n = o; function u(e) { n.autoBack && (n == null ? void 0 : n.url) && r.router.pushTab({ path: n.url }) } return t.useUserStore(), (t, r) => ({ a: e.o(u), b: e.p({ 'title': o.title, 'auto-back': n.autoBack, 'left-icon-size': `${n.leftIconSize}rpx`, 'placeholder': !0, 'border': !0, 'safe-area-inset-top': 'true', 'title-style': { color: '#000', fontWeight: 500, fontSize: '36rpx' } }) }) } }; wx.createComponent(o)

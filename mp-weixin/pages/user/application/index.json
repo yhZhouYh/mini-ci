@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "移动应用使用条款",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "shu-loading": "../../../components/common/loading/index"
+  }
+}
